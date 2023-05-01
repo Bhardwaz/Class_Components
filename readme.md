@@ -200,4 +200,27 @@ React first finish render cycle for each then in commit phase act accordingly co
 # SetState will trigger re-render again
 
 # Component did Update
+it get called on each set state 
+```
+componentDidUpdate(prevProps, prevState){
+  if(
+    this.state.count !== prevState.count ||
+    this.state.count !== prevState.count
+  ){
+    // code
+  }
+}
+
+There can be so much nesting of if else depends on state variable 
+in Functional based component we just mention dependency of state variable into array so this is the core this is happening behind the useEffect
+Initially React dev used to write like this 
+
+```
+
+# Component Will Unmount
+This will called for clean up when we go on another component inside our app so unmounting is necessary. space clean up is necessary
+otherwise our app can cause some serious issues and it is not scalable if we do not clean up
+
+# Use Effect is not equal to component did mount
+Never say this some developers have bad habbit of saying this. they are not equal
  

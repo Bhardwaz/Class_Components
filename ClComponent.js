@@ -8,6 +8,9 @@ class Profile extends React.Component{
   componentDidMount(){
     console.log('component did mount');
   }
+  componentDidUpdate(){
+    console.log('component did update');
+  }
   render(){
     console.log('render function');
     return <div>
